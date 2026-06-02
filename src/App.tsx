@@ -12,10 +12,10 @@ import { Settings } from './pages/Settings';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/tari-app'>
       <AuthProvider>
         <Navbar />
-        
+    
         <Routes>
           {/* Public Page Route */}
           <Route path="/login" element={<Login />} />
